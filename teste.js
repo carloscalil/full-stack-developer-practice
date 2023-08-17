@@ -1,18 +1,13 @@
-function fibonacciGenerator(n) {
-  if (n <= 0) {
-    return [];
-  } else if (n === 1) {
-    return [0];
-  } else if (n === 2) {
-    return [0, 1];
-  } else {
-    var array = [0, 1];
-    for (let i = 2; i < n; i++) {
-      let colocar = array[i - 1] + array[i - 2];
-      array.push(colocar);
-    }
-  }
-  return array;
+function HouseKeeper(name, age) {
+  this.name = name;
+  this.age = age;
+  this.clean = function () {
+    alert("Cleaning in progress...");
+  };
 }
 
-console.log(fibonacciGenerator(6));
+var housekeeper1 = {
+  name: "Andrea",
+  age: "23"
+};
+console.log(housekeeper1.name);
